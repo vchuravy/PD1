@@ -2,7 +2,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{subfig} % for subfloats
+\usepackage{epstopdf} % for including EPS files
 \DeclareUnicodeCharacter{00A0}{ }
+
+
+
 \date{\today}
 \title{Professional development}
 \subtitle{Bouldering Wall}
@@ -22,7 +28,16 @@ The wall itself consists of 12mm thick plywood that is reinforced by a frame mad
 The foam mattress consists of a bottom layer of 20cm thick open foam and a top layer of 5cm closed foam, covered by a PVC sheet to protect the foam.
 The two layer is necessary to prevent two distinct dangers that occur while climbing. The one is falling backwards of the wall and hurting you back and head in the process. The open foam layer is designed to absorb the force of the impact. The second danger is falling from the wall and landing on your feet. If the ground is too soft you might twist your ankle so the closed foam adds stability.
 
-% Todo images
+\begin{figure}[h]
+\subfloat[View of frame and trusses to support the wall.]{
+\centering
+\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{RockWall}
+}
+\subfloat[View of the rock climbing wall with respect to the building structure and I-beams.]{
+\centering
+\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{WoodWall2}
+}
+\end{figure}
 
 The first image is a look at the back of the wall, with the supporting frames and trusses needed to hold the wall together and attach it to the I-beams. The second image shows how the wall will fit into the corner of the ceramics shed, with three I-beams as its main supports and the foam pads underneath.
 
