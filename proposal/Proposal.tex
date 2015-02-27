@@ -1,4 +1,4 @@
-\documentclass{scrartcl}
+\documentclass[a4paper, 12pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -6,10 +6,7 @@
 \usepackage{subfig} % for subfloats
 \usepackage{booktabs} % for tables
 \usepackage{multirow} % for awesome tables
-\usepackage{epstopdf} % for including EPS files
-\DeclareUnicodeCharacter{00A0}{ }
-
-
+\usepackage{cleveref}
 
 \date{\today}
 \title{Professional development}
@@ -17,7 +14,7 @@
 \author{A. Dhar, J. Schloss, L. Li, V. Churavy}
 \begin{document}
 \maketitle
-\section{Introduction}
+\paragraph{Introduction}
 Our project will concern itself with planning and building a bouldering wall for the OIST family.
 Bouldering as a sport has seen a uptake of interest in recent years across Europe and North America, with creation of bouldering gyms in cities and at Universities. 
 
@@ -25,47 +22,52 @@ Bouldering is a form of sport climbing close to the ground and without the need 
 
 A bouldering wall normally consists of several pieces of wood with different degrees of inclination on which the climbing holds are fixed. To limit the dangers related to falling the floor of the wall needs to be covered with foam.
 
-\section{Construction of the Wall}
+\paragraph{Construction of the Wall}
 The wall itself consists of 12mm thick plywood that is reinforced by a frame made of wooden struts to carry the weight of the climber and to prevent flexing of the wood. The frame is the securely mounted to the base wall of the building. 
 The foam mattress consists of a bottom layer of 20cm thick open foam and a top layer of 5cm closed foam, covered by a PVC sheet to protect the foam.
 The two layer is necessary to prevent two distinct dangers that occur while climbing. The one is falling backwards of the wall and hurting you back and head in the process. The open foam layer is designed to absorb the force of the impact. The second danger is falling from the wall and landing on your feet. If the ground is too soft you might twist your ankle so the closed foam adds stability.
+\Cref{wall1} shows a look at the back of the wall, with the supporting frames and trusses needed to hold the wall together and attach it to the I-beams. \Cref{wall2} shows how the wall will fit into the corner of the ceramics shed, with three I-beams as its main supports and the foam pads underneath.
 
-\begin{figure}[h]
+\subparagraph{Fixing the frame to the building}
+Also contingent on the exact location is the question how to fix the wall to building structure and what kind of modifications we can make to it.
+
+To attach the wall to the building, we have designed the wall to line up with three I-beams in the corner of the ceramics shed. The wall will be fixed to each of these beams with a brace made from metal pipes and brackets. The metal tube can be attached to the wall using U bolts, and then placed around each I-beam at the top and bottom, anchoring the wall securely. This also makes it possible for the wall to be removable should the need arise.
+
+\subparagraph{Making Holds}
+The climbing holds should be made out of Polyurethane in a variety of different forms. To create these forms, we will first design them with florist foam and cover them with silicone to produce a mold. After placing the Polyurethane in the mold, we will place the entire structure in a vacuum chamber. The chamber will consist of a table with a single port at the base, where toxic fumes will be siphoned through a shop vacuum to a safe, removed location. This process is necessary for curing because gas bubbles in the plastic will result in structural weaknesses. 
+
+
+\paragraph{Location and Access}
+As location for the wall we currently propose the old clay factory in which the student wood workshop is also located, but this is contingent on the approval of the building management and also the exact placement of the wall inside the clay factory needs to be determined. We would prefer one of the corners to be more efficient with the foam mattress while conserving space.
+%TODO add info on access
+\paragraph{Outreach}
+Since none of us have specific experience in building rock climbing walls, we will be reaching out through the OIST community to acquire the expertise we require. Our first main contact is Julia Nabholz, who runs the Child Development Center. Her husband Mike is a construction worker and has offered us help in finding the right supplies to design our wall with. Julia will also be putting us in touch with another parent who has experience building rock climbing walls, and is currently designing one for the CDC's playground.
+
+In addition, Michael Cooper and Maki Thomas have made us aware of a cafe owner who is interested in building a rock climbing wall at his cafe at the base of OIST, so while we will not be able to build this for him, we will meet with him to make sure our bouldering wall coexists with his rock climbing wall.
+
+\paragraph{Materials}
+For obtaining hardware and supplies, our main sources will be Tabata and Makeman. We will also try to take advantage of the workshop’s supplies and tools when possible. With our current design and our preferred location we would need the parts listed in \cref{material}.
+
+\newpage
+\section*{Appendix}
+\begin{figure}[ht]
 \subfloat[View of frame and trusses to support the wall.]{
+\label{wall1}
 \centering
 \includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{WoodWall2}
 }
 \subfloat[View of the rock climbing wall with respect to the building structure and I-beams.]{
+\label{wall2}
 \centering
 \includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{RockWall}
 }
 \end{figure}
 
-The first image is a look at the back of the wall, with the supporting frames and trusses needed to hold the wall together and attach it to the I-beams. The second image shows how the wall will fit into the corner of the ceramics shed, with three I-beams as its main supports and the foam pads underneath.
 
-\subsection{Fixing the frame to the building}
-Also contingent on the exact location is the question how to fix the wall to building structure and what kind of modifications we can make to it.
-
-To attach the wall to the building, we have designed the wall to line up with three I-beams in the corner of the ceramics shed. The wall will be fixed to each of these beams with a brace made from metal pipes and brackets. The metal tube can be attached to the wall using U bolts, and then placed around each I-beam at the top and bottom, anchoring the wall securely. This also makes it possible for the wall to be removable should the need arise.
-
-\subsection{Making Holds}
-The climbing holds should be made out of Polyurethane in a variety of different forms. To create these forms, we will first design them with florist foam and cover them with silicone to produce a mold. After placing the Polyurethane in the mold, we will place the entire structure in a vacuum chamber. The chamber will consist of a table with a single port at the base, where toxic fumes will be siphoned through a shop vacuum to a safe, removed location. This process is necessary for curing because gas bubbles in the plastic will result in structural weaknesses. 
-
-
-\section{Location and Access}
-As location for the wall we currently propose the old clay factory in which the student wood workshop is also located, but this is contingent on the approval of the building management and also the exact placement of the wall inside the clay factory needs to be determined. We would prefer one of the corners to be more efficient with the foam mattress while conserving space.
-%TODO add info on access
-\section{Outreach}
-Since none of us have specific experience in building rock climbing walls, we will be reaching out through the OIST community to acquire the expertise we require. Our first main contact is Julia Nabholz, who runs the Child Development Center. Her husband Mike is a construction worker and has offered us help in finding the right supplies to design our wall with. Julia will also be putting us in touch with another parent who has experience building rock climbing walls, and is currently designing one for the CDC's playground.
-
-In addition, Michael Cooper and Maki Thomas have made us aware of a cafe owner who is interested in building a rock climbing wall at his cafe at the base of OIST, so while we will not be able to build this for him, we will meet with him to make sure our bouldering wall coexists with his rock climbing wall.
-
-\section{Materials}
-For obtaining hardware and supplies, our main sources will be Tabata and Makeman. We will also try to take advantage of the workshop’s supplies and tools when possible. With our current design and our preferred location we would need the following materials:
-
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \caption{List of Materials}
+\label{material}
 \begin{tabular}{l l}
 \toprule[2pt]
 Section & Item\\
