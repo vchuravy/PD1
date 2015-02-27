@@ -4,6 +4,8 @@
 \usepackage{lmodern}
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage{subfig} % for subfloats
+\usepackage{booktabs} % for tables
+\usepackage{multirow} % for awesome tables
 \usepackage{epstopdf} % for including EPS files
 \DeclareUnicodeCharacter{00A0}{ }
 
@@ -31,11 +33,11 @@ The two layer is necessary to prevent two distinct dangers that occur while clim
 \begin{figure}[h]
 \subfloat[View of frame and trusses to support the wall.]{
 \centering
-\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{RockWall}
+\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{WoodWall2}
 }
 \subfloat[View of the rock climbing wall with respect to the building structure and I-beams.]{
 \centering
-\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{WoodWall2}
+\includegraphics[width=.5\textwidth, clip=true, trim=200 0 200 0]{RockWall}
 }
 \end{figure}
 
@@ -54,44 +56,41 @@ The climbing holds should be made out of Polyurethane in a variety of different 
 As location for the wall we currently propose the old clay factory in which the student wood workshop is also located, but this is contingent on the approval of the building management and also the exact placement of the wall inside the clay factory needs to be determined. We would prefer one of the corners to be more efficient with the foam mattress while conserving space.
 %TODO add info on access
 \section{Outreach}
-Since none of us have specific experience in building rock climbing walls, we will be reaching out through the OIST community to acquire the expertise we require. Our first main contact is Julia Nabholz, who runs the Child Development Center. Her husband Mike is a construction worker with plenty of experience with designing structures. He has offered us help in finding the right supplies to design our wall with. Julia will also be putting us in touch with another parent who has experience building rock climbing walls, and is currently designing one for the CDC's playground.
+Since none of us have specific experience in building rock climbing walls, we will be reaching out through the OIST community to acquire the expertise we require. Our first main contact is Julia Nabholz, who runs the Child Development Center. Her husband Mike is a construction worker and has offered us help in finding the right supplies to design our wall with. Julia will also be putting us in touch with another parent who has experience building rock climbing walls, and is currently designing one for the CDC's playground.
 
 In addition, Michael Cooper and Maki Thomas have made us aware of a cafe owner who is interested in building a rock climbing wall at his cafe at the base of OIST, so while we will not be able to build this for him, we will meet with him to make sure our bouldering wall coexists with his rock climbing wall.
 
 \section{Materials}
-For obtaining hardware and supplies, our main sources will be Tabata and Makeman. We will also try to take advantage of the workshop’s supplies and tools when possible.
-With our current design and our preferred location we would need the following materials:
+For obtaining hardware and supplies, our main sources will be Tabata and Makeman. We will also try to take advantage of the workshop’s supplies and tools when possible. With our current design and our preferred location we would need the following materials:
 
-\begin{itemize}
-\item Frame
-\begin{itemize}
-\item 80m of 2x8cm struts 
-\item 10m of 8x8cm struts
-\item Screws + connectors
-\end{itemize}
-\item Wall
-\begin{itemize}
-\item 16.5 $m^2$ of 12mm plywood (910x1820mm pieces)
-\item T-nuts 500 [20cm grid]
-\end{itemize}
-\item Mattress
-\begin{itemize}
-\item 6$m^2$ of 5cm thick closed foam
-\item 6$m^2$ of 10 cm thick open foam (ICD 58/IFD>=60)
-\item ~6$m^2$ pvc sheet
-\end{itemize}
-\item Misc
-\begin{itemize}
-\item Drill bits and bits
-\item Tubing to connect table to shop vac
-\end{itemize}
-\item Holds
-\begin{itemize}
-\item Polyurethane resin
-\item Florist foam
-\item Silicone 
-\item 10 mm bolts
-\end{itemize}
-\end{itemize}
+\begin{table}[h]
+\centering
+\caption{List of Materials}
+\begin{tabular}{l l}
+\toprule[2pt]
+Section & Item\\
+\midrule
+\multirow{3}{*}{Frame} & 80m of 2x8cm struts \\
+	& 10m of 8x8cm struts \\
+	& Screws + connectors \\
+\midrule
+\multirow{2}{*}{Wall} & 16.5 $m^2$ of 12mm plywood (910x1820mm pieces)\\
+	& T-nuts 500 [20cm grid] \\
+\midrule
+\multirow{3}{*}{Mattress} & 6$m^2$ of 5cm thick closed foam\\
+	& 6$m^2$ of 10 cm thick open foam (ICD 58/IFD>=60)\\
+	& $\approx$6$m^2$ pvc sheet\\
+\midrule
+\multirow{4}{*}{Holds} & Polyurethane resin\\
+	& Florist foam\\
+	& Silicone\\
+	& 10 mm bolts\\
+	\midrule
+\multirow{2}{*}{Misc} &  Drill bits and bits\\
+	& Tubing to connect to shop vac\\
+\bottomrule[2pt]
+\end{tabular}
+\end{table}
+
 
 \end{document}
